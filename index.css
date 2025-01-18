@@ -1,0 +1,351 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    width: 101%;
+    overflow: hidden;
+    padding: 12px;
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    font-size: larger;
+}
+li{
+    display: flex;
+    float: inline-start;
+    overflow: hidden;
+}
+li a{
+    padding: 17px;
+    display: block;
+    color: white;
+}
+li a:hover{
+    color: #84DFFF;
+}
+
+
+
+
+.home{
+    padding: 220px 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+}
+.description{
+    padding-top: 20px;
+}
+.description h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+.description h1 span{
+    color: #84DFFF;
+    font-size: 55px;
+}
+.description h2{
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+}
+.description h2 span{
+    color: #84DFFF;
+    position: relative;
+}
+.description h2 span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0px;
+    height: 100%;
+    border-left: 4px solid #84DFFF;
+    background-color: black;
+    animation: text 3s infinite backwards steps(10);
+}
+@keyframes text{
+    0%{
+        left: o;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+.home img{
+    background-color: #84DFFF;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px #84DFFF;
+    filter: brightness(1.1);
+    animation: animate 2.5s ease-in-out forwards infinite;
+}
+.home img:hover{
+    box-shadow: 0px 0px 50px #84DFFF;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 150px;
+    gap: 60px;
+    padding-top: 100px;
+    color: white;
+}
+.about_image img{
+    background-color: #84DFFF;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px #84DFFF;
+    filter: brightness(1.1);
+    animation: animate1 2.5s ease-in-out forwards infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.about_section{
+    margin-bottom: 30px;
+}
+.about_section h1{
+    font-size: 40px;
+}
+.about_section h2{
+    margin-top: 10px;
+    color: #84DFFF;
+    font-size: 50px;
+} 
+.about_section h3 { 
+    font-size: 24px; 
+    color: white; 
+    margin-bottom: 10px; 
+} 
+.about_section p { 
+    font-size: 16px; 
+    line-height: 1.6; 
+    color: #84DFFF; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border-radius: 5px; 
+}
+.soc i{
+    margin: 25px 8px;
+    border: 2px solid #84DFFF;
+    border-radius: 50%;
+    padding: 13px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.soc i:hover{
+    background-color: #84DFFF;
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 15px #84DFFF;
+}
+.about_image button{
+    padding: 13px 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: linear-gradient(145deg,#84DFFF,rgb(231,201,35));
+    cursor: pointer;
+    border: none;
+}
+
+
+
+
+h1.project_section {
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    padding-top: 80px;
+}
+
+h1.project_section span {
+    color: #84DFFF;
+}
+
+div.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.project_card img {
+    transition: .4s ease-in-out;
+}
+
+.project_card img:hover {
+    transform: translateY(-20px) scale(1.1);
+}
+
+.project_card {
+    object-fit: cover;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.project_card .content {
+    border-image: fill 0 linear-gradient(#0001, #84DFFF);
+    position: relative;
+    bottom: 185px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}
+
+.content h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    width: 350px;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #ffffff;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    border-left: 4px solid #84DFFF;
+}
+
+
+h1.intership_section{
+    margin-top: 15rem;
+    color: white;
+    font-size: 50px;
+    padding-top: 100px;
+    text-align: center;
+}
+h1.intership_section span{
+    color: #84DFFF;
+}
+div.card{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    text-align: justify;
+    margin: 70px;
+    color: white;
+}
+.intership_card{
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.intership_card:hover{
+    border: 2px solid #84DFFF;
+    background-color: #42C2FF;
+    transform: translateY(-20px);
+}
+.intership_card i{
+    font-size: 40px;
+    color: #84DFFF;
+}
+.intership_card h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.intership_card p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif; 
+    font-size: 16px; 
+    font-weight: normal; 
+    color: #84DFFF; 
+    line-height: 1.6; 
+    text-align: justify; 
+}
+
+
+
+.form h1{
+    margin: 150px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding-top: 80px;
+}
+.form input,textarea{
+    width: 550px;
+    margin: 10px 340px;
+    padding: 15px;
+    background-color: rgb(63, 63, 63);
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.form .form_btn{
+    padding: 15px;
+    font-size: 20px;
+    background-color: #84DFFF;
+    margin: 1.5rem 33rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #84DFFF;
+    cursor: pointer;
+    border: none;
+    transition: .3s ease;
+}
+.form .form_btn:hover{
+    background: transparent;
+    border: 2px solid #84DFFF;
+    color: white;
+}
+.footer{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+*::selection{
+    background-color: #42C2FF;
+}
