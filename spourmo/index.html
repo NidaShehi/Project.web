@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="index.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">My Blog</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="home">
+        <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/5992673/cover_image/optimized/1005_Design-Patterns-in-React_Cover-50911a22c4656a1f2a381b6c9ca38d57.png" alt="Blog banner" width="100%">
+        <div class="description">
+            <h1>Welcome to My Blog!</h1>
+            <p>Sharing insights, tutorials, and stories about frontend development and more.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <p>Hi, I'm Jonida Shehi, a passionate frontend developer. I love creating beautiful and functional websites. In this blog, I'll be sharing my knowledge and experiences in the world of frontend development. Stay tuned for tutorials, tips, and project showcases!</p>
+    </section>
+
+    <section id="blog" class="blog">
+        <h1>Blog Posts</h1>
+        <div class="post">
+            <h2>Understanding Flexbox</h2>
+            <p>Flexbox is a powerful layout module in CSS. It allows for easy alignment and distribution of space among items in a container...</p>
+            <a href="#">Read More</a>
+        </div>
+        <div class="post">
+            <h2>Getting Started with React</h2>
+            <p>React is a popular JavaScript library for building user interfaces. It makes it painless to create interactive UIs. In this post, we will...</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h1>Contact</h1>
+        <form action="#home">
+            <input type="text" name="name" placeholder="Enter your name" required=""><br>
+            <input type="email" name="email" placeholder="Enter your email" required=""><br>
+            <textarea name="message" id="message" rows="7" cols="15" placeholder="Enter your message"></textarea><br>
+            <button class="form_btn" type="submit">Submit</button>
+        </form>
+    </section>
+    
+
+    <footer class="footer">
+        <p><i class="fa-solid fa-copyright"></i> All rights reserved...</p>
+    </footer>
+</body>
+</html>
